@@ -1,0 +1,17 @@
+<h1>One way data binding</h1>
+<input type="color" name="color" [(ngModel)]="color" class="clr" /><br/>
+{{ color }}
+<div style="background-color: {{ color }}">change the color</div>
+<br><br/>
+
+<h1>Two way data binding</h1>
+<div>
+  <input (keyup)="onKeyUp1($event)" placeholder="username" />
+  <br />
+  <br />
+  <br />
+  <input (keyup)="onKeyUp2($event)" placeholder="Password" />
+  <br />
+  <br />
+  <button (click)="onClick()">click me</button>
+</div>
